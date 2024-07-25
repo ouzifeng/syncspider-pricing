@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Pricing component</title>
+  </head>
+  <body>
+    <header>
+      <h1>Our Pricing</h1>
+      <h2 class="small-header">Data syncing done for you</h2>
+      <p class="small-p">
+        Syncspider's fully managed service means just that. We do the
+        integration work for you.
+      </p>
+      <div class="toggle">
+        <label>Quarterly</label>
+        <div class="toggle-btn">
+          <input type="checkbox" class="checkbox" id="checkbox" />
+          <label class="sub" id="sub" for="checkbox">
+            <div class="circle"></div>
+          </label>
+        </div>
+        <label>Annually</label>
+        <select id="currency-dropdown">
+          <option value="EUR">&euro; EUR</option>
+          <option value="USD">&dollar; USD</option>
+          <option value="GBP">&pound; GBP</option>
+        </select>
+      </div>
+    </header>
+    <div class="cards">
+      <div class="card shadow">
+        <ul>
+          <li class="pack">Starter</li>
+          <li id="basic" class="price bottom-bar">$199.99</li>
+          <li class="bottom-bar">Up to 500 items</li>
+          <li class="bottom-bar">Up to 5 integrations</li>
+          <li class="bottom-bar">Data synced hourly</li>
+          <li><button class="btn">Talk To Us</button></li>
+        </ul>
+      </div>
+      <div class="card active">
+        <ul>
+          <li class="pack">Pro</li>
+          <li id="professional" class="price bottom-bar">$249.99</li>
+          <li class="bottom-bar">Up to 2,500 items</li>
+          <li class="bottom-bar">Unlimited integrations</li>
+          <li class="bottom-bar">Data synced hourly</li>
+          <li><button class="btn active-btn">Talk To Us</button></li>
+        </ul>
+      </div>
+      <div class="card shadow">
+        <ul>
+          <li class="pack">Enterprise</li>
+          <li id="master" class="price bottom-bar">$399.99</li>
+          <li class="bottom-bar">Up to 5,000 items</li>
+          <li class="bottom-bar">Unlimited integrations</li>
+          <li class="bottom-bar">Data synced every 30min</li>
+          <li><button class="btn">Talk To Us</button></li>
+        </ul>
+      </div>
+    </div>
+    <header>
+      <h2 class="small-header">What is an item?</h2>
+      <p class="small-p">
+        Syncspider classes an item as an object, i.e., an order, a product, or a
+        customer. We count the number of items over a monthly basis.
+      </p>
+      <table class="item-table">
+        <tr>
+          <th>Example</th>
+          <th>Number of Items</th>
+        </tr>
+        <tr>
+          <td>1,000 products</td>
+          <td>1,000 items</td>
+        </tr>
+        <tr>
+          <td>750 products + 900 orders per month</td>
+          <td>1,650 items</td>
+        </tr>
+      </table>
+    </header>
+    <script src="index.js"></script>
+  </body>
+</html>
